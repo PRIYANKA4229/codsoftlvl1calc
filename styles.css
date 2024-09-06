@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+}
+
+#display {
+    width: 90%;
+    padding: 20px;
+    font-size: 2.5em;
+    border: none;
+    background-color: #e3f2fd; /* Lighter blue for display */
+    text-align: right;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    padding: 5px;
+    font-size: 1.0em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ffc1e3; /* Light pink buttons */
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9bb3; /* Darker pink on hover */
+}
+
+button:nth-child(4n) {
+    background-color: #90caf9; /* Blue operation buttons */
+}
+
+button:nth-child(4n):hover {
+    background-color: #42a5f5; /* Darker blue on hover */
+}
+
+button:nth-child(3) {
+    background-color: #ffab91; /* Custom color for delete button */
+}
+
+button:nth-child(3):hover {
+    background-color: #ff7043;
+}
+
+button:nth-child(12) {
+    background-color: #4db6ac; /* Equal button in teal */
+    color: white;
+}
+
+button:nth-child(12):hover {
+    background-color: #00897b; /* Darker teal on hover */
+}
+
+button:active {
+    transform: scale(0.95); /* Button press effect */
+}
